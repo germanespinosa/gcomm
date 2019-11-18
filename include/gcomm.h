@@ -27,4 +27,8 @@ namespace gcomm {
         GConnector &_conn;
     };
 }
+#include"gmemconnector.h"
+#include "gsocketconnector.h"
+#include "gstreamconnector.h"
+#include "guart.h"
 #endif
