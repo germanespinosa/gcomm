@@ -11,9 +11,13 @@ add_library ( gcomm
     include/gcomm.h
     include/gsocketconnector.h
     include/gmemconnector.h
+    include/gstreamconnector.h
+    include/guartstream.h
     src/gcomm.cpp
     src/gsocketconnector.cpp
-    src/gmemconnector.cpp src/gcomm.cpp)
+    src/gmemconnector.cpp
+    src/gstreamconnector.cpp
+    src/guartstream.cpp)
 
 
 set_target_properties( gcomm
@@ -56,3 +60,5 @@ install(EXPORT GCommConfig
         DESTINATION ${CMAKE_INSTALL_DATADIR}/cmake/GComm)
 
 export(TARGETS gcomm FILE GCommConfig.cmake)
+
+include(CMakeTests.txt)

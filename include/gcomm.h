@@ -30,5 +30,5 @@ namespace gcomm {
 #include"gmemconnector.h"
 #include "gsocketconnector.h"
 #include "gstreamconnector.h"
-#include "guart.h"
+#include "guartstream.h"
 #endif
