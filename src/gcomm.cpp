@@ -13,4 +13,8 @@ namespace  gcomm{
         _conn.write_buffer(&o, sizeof(TOUT));
     }
 
+    void GStream::stop(){
+        active = false;
+    }
+
 }

@@ -22,7 +22,7 @@ namespace gcomm {
 
     uint8_t GUartStream::get_byte() {
         uint8_t byte;
-        while (read(_file, &byte, 1) != 1);
+        while (read(_file, &byte, 1) != 1 && active);
         return byte;
     }
 

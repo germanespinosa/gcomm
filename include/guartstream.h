@@ -31,7 +31,7 @@ namespace gcomm {
             b4000000 = B4000000
         };
 
-        UartGStream(baudrate);
+        GUartStream(baudrate);
 
         virtual uint8_t get_byte() override;
 

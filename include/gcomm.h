@@ -8,6 +8,10 @@ namespace gcomm {
         virtual uint8_t get_byte() = 0;
 
         virtual void set_byte(uint8_t) = 0;
+
+        void stop();
+
+        bool active = true;
     };
 
     struct GConnector {
@@ -20,14 +24,15 @@ namespace gcomm {
     template<typename TIN, typename TOUT>
     struct GComm {
         GComm(GConnector &conn);
-        bool read_object(TIN &i);
-        void write_object(TOUT o);
 
+        bool read_object(TIN &i);
+
+        void write_object(TOUT o);
     private:
         GConnector &_conn;
     };
 }
-#include"gmemconnector.h"
+#include "gmemconnector.h"
 #include "gsocketconnector.h"
 #include "gstreamconnector.h"
 #include "guartstream.h"

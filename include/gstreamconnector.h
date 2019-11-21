@@ -19,20 +19,16 @@ namespace gcomm {
 
         bool time_out();
 
+        ~GStreamConnector();
+
     private:
         uint8_t get_byte();
-
         bool set_byte(uint8_t);
-
         GStream &_stream;
         uint16_t _rx_length;
-
         uint16_t _pending();
-
         static void _rx_update_(GStreamConnector &);
-
         static void _tx_update_(GStreamConnector &);
-
         std::thread _rx_thread;
         std::thread _tx_thread;
         uint8_t _rx_buffer[BUFFERLENGTH];
@@ -43,6 +39,7 @@ namespace gcomm {
         uint16_t _tx_next;
         uint64_t _timeout;
         std::mutex _rx_buffer_access;
+        bool _active;
     };
 }
 #endif
