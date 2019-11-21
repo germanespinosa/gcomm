@@ -23,11 +23,15 @@ namespace gcomm {
 
     template<typename TIN, typename TOUT>
     struct GComm {
-        GComm(GConnector &conn);
+        GComm(GConnector &conn): _conn(conn) {}
 
-        bool read_object(TIN &i);
+        bool read_object(TIN &i){
+            return _conn.read_buffer(&i, sizeof(TIN)) == sizeof(TIN);
+        }
 
-        void write_object(TOUT o);
+        void write_object(TOUT o){
+            _conn.write_buffer(&o, sizeof(TOUT));
+        }
     private:
         GConnector &_conn;
     };
