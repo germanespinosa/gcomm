@@ -40,11 +40,13 @@ namespace gcomm {
         if (_rx_length && _pending() > _rx_length) {
             uint8_t *dest_c = (uint8_t *) dest;
             uint8_t check_sum = 0;
-            for (int index = 0; index < _rx_length; index++) {
+            int x = 0;
+            for (int index = 0; index + x < _rx_length; index++) {
                 CHECK_BYTE
                 if (byte==127) {
                     CHECK_BYTE
                     byte += 127;
+                    x++;
                 }
                 if (index < max_size) dest_c[index] = byte;
                 check_sum = check_sum ^ byte;

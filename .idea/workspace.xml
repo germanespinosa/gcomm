@@ -11,7 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfae32a8-4ec8-433b-a96d-fbdf4820c308" name="Default Changelist" comment="" />
+    <list default="true" id="cfae32a8-4ec8-433b-a96d-fbdf4820c308" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gstreamconnector2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/gstreamconnector2.cpp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574567334614</updated>
-      <workItem from="1574567336380" duration="5172000" />
+      <workItem from="1574567336380" duration="5958000" />
     </task>
     <servers />
   </component>
