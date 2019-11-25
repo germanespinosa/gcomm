@@ -1,7 +1,0 @@
-/home/cs211/gcomm/build/CMakeFiles/install/strip.dir
-/home/cs211/gcomm/build/CMakeFiles/edit_cache.dir
-/home/cs211/gcomm/build/CMakeFiles/gcomm.dir
-/home/cs211/gcomm/build/CMakeFiles/rebuild_cache.dir
-/home/cs211/gcomm/build/CMakeFiles/list_install_components.dir
-/home/cs211/gcomm/build/CMakeFiles/install/local.dir
-/home/cs211/gcomm/build/CMakeFiles/install.dir
