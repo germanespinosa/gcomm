@@ -4,11 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/cs211/gcomm/src/gbuffer.cpp" "/home/cs211/gcomm/cmake-build-debug/CMakeFiles/gcomm.dir/src/gbuffer.cpp.o"
   "/home/cs211/gcomm/src/gcomm.cpp" "/home/cs211/gcomm/cmake-build-debug/CMakeFiles/gcomm.dir/src/gcomm.cpp.o"
   "/home/cs211/gcomm/src/gmemconnector.cpp" "/home/cs211/gcomm/cmake-build-debug/CMakeFiles/gcomm.dir/src/gmemconnector.cpp.o"
   "/home/cs211/gcomm/src/gsocketconnector.cpp" "/home/cs211/gcomm/cmake-build-debug/CMakeFiles/gcomm.dir/src/gsocketconnector.cpp.o"
   "/home/cs211/gcomm/src/gstreamconnector.cpp" "/home/cs211/gcomm/cmake-build-debug/CMakeFiles/gcomm.dir/src/gstreamconnector.cpp.o"
-  "/home/cs211/gcomm/src/gstreamconnector2.cpp" "/home/cs211/gcomm/cmake-build-debug/CMakeFiles/gcomm.dir/src/gstreamconnector2.cpp.o"
+  "/home/cs211/gcomm/src/gstreamconnector3.cpp" "/home/cs211/gcomm/cmake-build-debug/CMakeFiles/gcomm.dir/src/gstreamconnector3.cpp.o"
   "/home/cs211/gcomm/src/guartstream.cpp" "/home/cs211/gcomm/cmake-build-debug/CMakeFiles/gcomm.dir/src/guartstream.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

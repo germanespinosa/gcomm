@@ -1,7 +1,9 @@
 /home/cs211/gcomm/cmake-build-debug/CMakeFiles/install/strip.dir
-/home/cs211/gcomm/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/cs211/gcomm/cmake-build-debug/CMakeFiles/gcomm.dir
-/home/cs211/gcomm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/cs211/gcomm/cmake-build-debug/CMakeFiles/list_install_components.dir
-/home/cs211/gcomm/cmake-build-debug/CMakeFiles/install/local.dir
 /home/cs211/gcomm/cmake-build-debug/CMakeFiles/install.dir
+/home/cs211/gcomm/cmake-build-debug/CMakeFiles/gcomm_tests.dir
+/home/cs211/gcomm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/cs211/gcomm/cmake-build-debug/CMakeFiles/install/local.dir
+/home/cs211/gcomm/cmake-build-debug/CMakeFiles/test.dir
+/home/cs211/gcomm/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/cs211/gcomm/cmake-build-debug/CMakeFiles/gcomm.dir
+/home/cs211/gcomm/cmake-build-debug/CMakeFiles/edit_cache.dir

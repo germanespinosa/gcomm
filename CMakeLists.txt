@@ -16,7 +16,10 @@ add_library ( gcomm
     include/gsocketconnector.h
     include/gmemconnector.h
     include/gstreamconnector.h
-    include/guartstream.h src/gstreamconnector2.cpp include/gstreamconnector2.h)
+    include/guartstream.h
+        src/gstreamconnector3.cpp
+        include/gstreamconnector3.h
+        src/gbuffer.cpp include/gbuffer.h )
 
 
 set_target_properties( gcomm

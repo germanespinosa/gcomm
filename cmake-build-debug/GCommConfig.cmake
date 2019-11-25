@@ -46,14 +46,14 @@ add_library(gcomm STATIC IMPORTED)
 
 set_target_properties(gcomm PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "/home/cs211/gcomm/include"
-  INTERFACE_LINK_LIBRARIES "-lpthread"
+  INTERFACE_LINK_LIBRARIES "pthread"
 )
 
-# Import target "gcomm" for configuration "Debug"
-set_property(TARGET gcomm APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+# Import target "gcomm" for configuration ""
+set_property(TARGET gcomm APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(gcomm PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/home/cs211/gcomm/cmake-build-debug/libgcomm.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
+  IMPORTED_LOCATION_NOCONFIG "/home/cs211/gcomm/cmake-build-debug/libgcomm.a"
   )
 
 # This file does not depend on other imported targets which have
