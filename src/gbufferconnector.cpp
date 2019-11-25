@@ -1,9 +1,6 @@
-//
-// Created by cs211 on 11/24/19.
-//
-
-#include "gstreamconnector3.h"
+#include "gcomm.h"
 #include <iostream>
+
 using namespace std;
 namespace gcomm{
 

@@ -1,14 +1,17 @@
-#include "guartstream.h"
+#include "gcomm.h"
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
 #include <fstream>
 
-
+using namespace std;
 namespace gcomm {
-    GUartStream::GUartStream(baudrate baudrate) {
+
+    GUart::GUart(Baudrate baudrate) : GUart("/dev/serial0", baudrate) {}
+
+    GUart::GUart(const char *devicepath ,Baudrate baudrate) {
         _file = -1;
-        _file = open("/dev/serial0", O_RDWR | O_NOCTTY | O_NDELAY);//Open in non blocking read/write mode
+        _file = open(devicepath, O_RDWR | O_NOCTTY | O_NDELAY);//Open in non blocking read/write mode
         if (_file < 0) exit(EXIT_FAILURE);
         struct termios options;
         tcgetattr(_file, &options);
@@ -20,13 +23,13 @@ namespace gcomm {
         tcsetattr(_file, TCSANOW, &options);
     }
 
-    uint8_t GUartStream::get_byte() {
+    uint8_t GUart::read_byte() {
         uint8_t byte;
         while (read(_file, &byte, 1) != 1 && active);
         return byte;
     }
 
-    void GUartStream::set_byte(uint8_t byte) {
+    void GUart::write_byte(uint8_t byte) {
         write(_file, &byte, 1);
     }
 }

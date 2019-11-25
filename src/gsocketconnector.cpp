@@ -1,5 +1,5 @@
-#include "gsocketconnector.h"
-#include <unistd.h> 
+#include "gcomm.h"
+#include <unistd.h>
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <string.h>

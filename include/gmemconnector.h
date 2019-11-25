@@ -1,10 +1,7 @@
-# if !defined(__GMEM_H__)
-# define __GMEM_H__
+#ifndef GCOMM_GMEMCONNECTOR_H
+#define GCOMM_GMEMCONNECTOR_H
 
-#include"gcomm.h"
-#include <thread>
-#include <mutex>
-
+#include "gcomm.h"
 namespace gcomm {
     struct GMemConnector : GConnector {
     public:

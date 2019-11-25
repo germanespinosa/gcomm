@@ -1,5 +1,5 @@
-#include "gmemconnector.h"
-#include <iostream> 
+#include "gcomm.h"
+#include <iostream>
 #include <sys/ipc.h> 
 #include <sys/shm.h> 
 #include <stdio.h>

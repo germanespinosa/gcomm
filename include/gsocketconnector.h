@@ -1,7 +1,7 @@
-# if !defined(__GSOCKETCONNECTOR_H__)
-# define __GSOCKETCONNECTOR_H__
+#ifndef GCOMM_GSOCKETCONNECTOR_H
+#define GCOMM_GSOCKETCONNECTOR_H
 
-#include"gcomm.h"
+#include "gcomm.h"
 #include <thread>
 #include <mutex>
 

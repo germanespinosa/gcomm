@@ -1,13 +1,9 @@
-//
-// Created by cs211 on 11/24/19.
-//
-
 #ifndef GCOMM_GBUFFER_H
 #define GCOMM_GBUFFER_H
 
-
-#include <cstdint>
+#include "gcomm.h"
 namespace gcomm {
+
     struct GBuffer {
         GBuffer(uint32_t);
 

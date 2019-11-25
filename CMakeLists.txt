@@ -7,19 +7,14 @@ project(gcomm
 find_package (Threads REQUIRED)
 
 add_library ( gcomm
-    src/gcomm.cpp
-    src/gsocketconnector.cpp
-    src/gmemconnector.cpp
-    src/gstreamconnector.cpp
-    src/guartstream.cpp
-    include/gcomm.h
-    include/gsocketconnector.h
-    include/gmemconnector.h
-    include/gstreamconnector.h
-    include/guartstream.h
-        src/gstreamconnector3.cpp
-        include/gstreamconnector3.h
-        src/gbuffer.cpp include/gbuffer.h )
+        src/gcomm.cpp
+        src/gbuffer.cpp
+        src/guart.cpp
+        src/guartbuffers.cpp
+        src/gsocketconnector.cpp
+        src/gmemconnector.cpp
+        src/gbufferconnector.cpp
+    )
 
 
 set_target_properties( gcomm

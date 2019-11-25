@@ -1,9 +1,5 @@
-//
-// Created by cs211 on 11/24/19.
-//
-
 #include <cstdlib>
-#include "gbuffer.h"
+#include "gcomm.h"
 #include "malloc.h"
 namespace gcomm{
     GBuffer::GBuffer(uint32_t size) {
@@ -32,6 +28,8 @@ namespace gcomm{
             byte = _buffer[_next];
             _next++;
             if (_next>=_size) _next = 0;
-        }else return false;
+            return true;
+        }
+        return false;
     }
 }

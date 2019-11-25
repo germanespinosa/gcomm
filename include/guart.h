@@ -1,13 +1,13 @@
-# if !defined(__GUART_H__)
-# define __GUART_H__
+#ifndef GCOMM_GUART_H
+#define GCOMM_GUART_H
 
-#include"gcomm.h"
+#include "gcomm.h"
 #include <termios.h>
 
 namespace gcomm {
-    struct GUartStream : GStream {
+    struct GUart {
     public:
-        enum class baudrate {
+        enum class Baudrate {
             b1200 = B1200,
             b2400 = B2400,
             b4800 = B4800,
@@ -31,12 +31,14 @@ namespace gcomm {
             b4000000 = B4000000
         };
 
-        GUartStream(baudrate);
+        GUart(Baudrate);
+        GUart(const char*, Baudrate);
 
-        virtual uint8_t get_byte() override;
+        uint8_t read_byte();
 
-        virtual void set_byte(uint8_t) override;
+        void write_byte(uint8_t);
 
+        bool active;
     private:
         int32_t _file;
     };
